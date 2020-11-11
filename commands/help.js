@@ -10,8 +10,8 @@ module.exports = {
      client.commands.map(cmd =>{
        helpembed.addField(`${cmd.name} (${cmd.alias})`, cmd.description)
      })
-     helpembed.setColor("RANDOM")
-     .setFooter("© Client Developer 2020")
+     helpembed.setColor("YELLOW")
+     .setFooter("© Nordd Recmand 2020")
      msg.channel.send(helpembed);
   }
 }

@@ -52,7 +52,7 @@ module.exports = {
     });
   } catch (e) {
     const embed = new MessageEmbed()
-      .setColor("RED")
+      .setColor("YELLOW")
       .setAuthor("Evaled error")
       .setDescription(`\`\`\`${e}\`\`\``)
       .setFooter(`React to delete message.`);
