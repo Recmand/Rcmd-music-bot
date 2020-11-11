@@ -33,7 +33,7 @@ client.hastebin = async(text) => {
 //event
 client.on('ready', () => {
   console.log(`${client.user.tag} ready to serving ${client.guilds.cache.size} guild(s) and ${client.users.cache.size} user(s), with ${client.commands.size} command(s) total!`)
-  client.user.setActivity("n-help", {type:"LISTENING"})
+  client.user.setActivity("n- help", {type:"LISTENING"})
 });
 
 const commandFile = fs.readdirSync("./commands").filter(file => file.endsWith(".js"));
@@ -55,8 +55,8 @@ client.on('message', msg => {
   if(msg.content == `<@${client.user.id}>`){
     const embed = new discord.MessageEmbed()
     .setDescription(`:wave: | My prefix is ${prefix}`)
-    .setColor("RANDOM")
-    .setFooter("© Client Developer 2020")
+    .setColor("YELLOW")
+    .setFooter("© Nordd Recmand 2020")
     msg.channel.send(embed)
   }
   if(msg.content == prefix) {

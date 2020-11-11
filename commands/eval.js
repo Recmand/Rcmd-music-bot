@@ -38,7 +38,7 @@ module.exports = {
     else evaled = `\`\`\`${evaled}\`\`\``;
     const embed = new MessageEmbed()
       .setAuthor("Evaled success")
-      .setColor("GREEN")
+      .setColor("YELLOW")
       .setDescription(evaled)
       .addField("Type", `\`\`\`${type}\`\`\``)
       .setFooter(`React to delete message.`);
