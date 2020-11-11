@@ -63,8 +63,8 @@ client.on('message', msg => {
     const embed = new discord.MessageEmbed()
     .setDescription(`Hey, It's me!
 You can type ${prefix}help to get bot commands list`)
-    .setColor("RANDOM")
-    .setFooter("© Client Developer 2020")
+    .setColor("YELLOW")
+    .setFooter("© Nordd Recmand 2020")
     return msg.channel.send(embed)
   }
   let args = msg.content.slice(prefix.length).trim().split(" ");
